@@ -1,0 +1,35 @@
+div.team-info {
+  width: 250px;
+}
+
+div.team-info div.team-name p {
+  margin-bottom: 0.5rem;
+  font: 1.5rem sans-serif;
+  white-space: nowrap;
+}
+
+div.team-info div.team-name input {
+  position: relative;
+  font: 1.2rem sans-serif;
+  width: 166px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+div.team-info input::-webkit-outer-spin-button,
+div.team-info input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+div.team-info input[type=number] {
+  -moz-appearance: textfield;
+}
+
+div.team-info table td:last-child input {
+  position: relative;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

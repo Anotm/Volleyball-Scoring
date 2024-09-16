@@ -1,0 +1,21 @@
+div.sets table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+div.sets table td {
+  border: 1px solid black;
+}
+
+div.sets td {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+div.sets td.side-writing {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  width: 1rem;  
+}

@@ -1,9 +1,17 @@
 div.team-info {
   width: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.team-info > div {
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 0.5rem;
 }
 
 div.team-info div.team-name p {
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0;
   font: 1.5rem sans-serif;
   white-space: nowrap;
 }

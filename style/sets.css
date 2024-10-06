@@ -19,3 +19,8 @@ div.sets td.side-writing {
   text-orientation: mixed;
   width: 1rem;  
 }
+
+div.sets td > div.Score {
+  text-align: center;
+  font-size: 2rem;
+}

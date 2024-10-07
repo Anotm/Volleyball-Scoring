@@ -14,7 +14,7 @@
 				<thead>
 					<td>No.</td>
 					<td>Player Name:</td>
-					<td>Sub:</td>
+					<td>Spare:</td>
 				</thead>
 				<tbody>
 					<tr>
@@ -79,7 +79,7 @@
 				<thead>
 					<td>No.</td>
 					<td>Player Name:</td>
-					<td>Sub:</td>
+					<td>Spare:</td>
 				</thead>
 				<tr>
 					<td><input type="number" min="0" max="1000"></td>
@@ -136,112 +136,225 @@
 	</div>
 
 	<div class="sets">
-		<div class="set1">
-			<table><tbody>
-				<tr>
-					<td rowspan="2" class="side-writing">Rotation #</td>
-					<td rowspan="2" class="side-writing">Player #</td>
-					<td rowspan="2" class="side-writing">Set at Sub</td>
-					<td colspan="4">Team: <br> <br> <br></td>
-					<td colspan="2" rowspan="10"> <div class="Score">56</div> </td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>2</td>
-					<td>3</td>
-					<td>4</td>
-				</tr>
-				<tr>
-					<td rowspan="2">1</td>
-					<td></td>
-					<td></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td rowspan="2">2</td>
-					<td></td>
-					<td></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td rowspan="2">3</td>
-					<td></td>
-					<td></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td rowspan="2">4</td>
-					<td></td>
-					<td></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td rowspan="2">5</td>
-					<td></td>
-					<td></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td colspan="2" rowspan="2">Time-outs</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td rowspan="2">6</td>
-					<td></td>
-					<td></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-					<td rowspan="2"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="5">Libero: </td>
-					<td colspan="4">Final Score: </td>
-				</tr>
-			</tbody></table>
+		<div class="set">
+			<table class="team-on-left">
+				<tbody>
+					<tr>
+						<td rowspan="2" class="side-writing">Rotation #</td>
+						<td rowspan="2" class="side-writing">Player #</td>
+						<td rowspan="2" class="side-writing">Point at Sub</td>
+						<td colspan="4">Team: <br>
+							<select name="team-name">
+							  <option value="Select Team Name...">Select Team Name...</option>
+							</select>
+						</td>
+						<td colspan="2" rowspan="10"> <div class="Score">0</div> </td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td rowspan="2">1</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">2</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">3</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">4</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">5</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td colspan="2" rowspan="2">Time-outs</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">6</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="5">Libero: </td>
+						<td colspan="4">Final Score: </td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="team-on-right">
+				<tbody>
+					<tr>
+						<td rowspan="2" class="side-writing">Rotation #</td>
+						<td rowspan="2" class="side-writing">Player #</td>
+						<td rowspan="2" class="side-writing">Point at Sub</td>
+						<td colspan="4">Team: <br>
+							<select name="team-name">
+							  <option value="Select Team Name...">Select Team Name...</option>
+							</select>
+						</td>
+						<td colspan="2" rowspan="10"> <div class="Score">0</div> </td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td rowspan="2">1</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">2</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">3</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">4</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">5</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td colspan="2" rowspan="2">Time-outs</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">6</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="5">Libero: </td>
+						<td colspan="4">Final Score: </td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 
 	<script src=".\js\jquery.js"></script> 
 	<script src=".\js\getTeamInfo.js"></script> 
+	<script src=".\js\updateDropDowns.js"></script> 
 	<script src=".\js\script.js"></script> 
 </body>
 </html>

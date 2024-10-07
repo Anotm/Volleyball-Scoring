@@ -34,7 +34,7 @@ function getTeamPlayers(n) {
 		if (numVal && nameVal) {
 			dic["Number"] = numVal;
 			dic["Name"] = nameVal;
-			dic["Sub"] = subVal;
+			dic["Spare"] = subVal;
 			teamPlayers.push(dic);
 		}
 	});

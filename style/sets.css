@@ -24,3 +24,9 @@ div.sets td > div.Score {
   text-align: center;
   font-size: 2rem;
 }
+
+div.sets div.set {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}

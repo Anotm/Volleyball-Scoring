@@ -1,5 +1,6 @@
 var teamNames = ["", ""];
 var teamPlayers = [[], []];
+var setNumber = 1;
 
 $('div.team-one > div.team-name > p > input').on('input', function(){
 	teamNames[0] = getTeamName(1);

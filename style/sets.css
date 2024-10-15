@@ -41,6 +41,7 @@ div.sets div.set div.court table.players {
 
 div.sets div.set div.court table.players tbody tr td {
   text-align: center;
+  font-size: 2rem;
 }
 
 div.sets div.set div.court table.players tr td:first-child {
@@ -72,13 +73,19 @@ div.sets div.set > table td {
   word-break: normal;
 }
 
+div.sets div.set > table td.serve-end-score {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
 div.sets td.side-writing {
   writing-mode: vertical-lr;
   text-orientation: mixed;
   width: 1rem;  
 }
 
-div.sets td > div.Score {
+div.sets td > div.team-score {
   text-align: center;
   font-size: 2rem;
 }

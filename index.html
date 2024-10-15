@@ -172,7 +172,7 @@
 							  <option value=""></option>
 							</select>
 						</td>
-						<td colspan="2" rowspan="10"> <div class="Score">0</div> </td>
+						<td colspan="2" rowspan="10"> <div class="team-score">0</div> </td>
 					</tr>
 					<tr>
 						<td>1</td>
@@ -184,10 +184,10 @@
 						<td rowspan="2">1</td>
 						<td><input class="p1 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-11 serve-end-score" rowspan="2"></td>
+						<td class="serve-12 serve-end-score" rowspan="2"></td>
+						<td class="serve-13 serve-end-score" rowspan="2"></td>
+						<td class="serve-14 serve-end-score" rowspan="2"></td>
 					</tr>
 					<tr>
 						<td><input type="number" min="0" max="1000"></td>
@@ -197,10 +197,10 @@
 						<td rowspan="2">2</td>
 						<td><input class="p2 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-21 serve-end-score" rowspan="2"></td>
+						<td class="serve-22 serve-end-score" rowspan="2"></td>
+						<td class="serve-23 serve-end-score" rowspan="2"></td>
+						<td class="serve-24 serve-end-score" rowspan="2"></td>
 					</tr>
 					<tr>
 						<td><input type="number" min="0" max="1000"></td>
@@ -210,10 +210,10 @@
 						<td rowspan="2">3</td>
 						<td><input class="p3 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-31 serve-end-score" rowspan="2"></td>
+						<td class="serve-32 serve-end-score" rowspan="2"></td>
+						<td class="serve-33 serve-end-score" rowspan="2"></td>
+						<td class="serve-34 serve-end-score" rowspan="2"></td>
 					</tr>
 					<tr>
 						<td><input type="number" min="0" max="1000"></td>
@@ -223,10 +223,10 @@
 						<td rowspan="2">4</td>
 						<td><input class="p4 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-41 serve-end-score" rowspan="2"></td>
+						<td class="serve-42 serve-end-score" rowspan="2"></td>
+						<td class="serve-43 serve-end-score" rowspan="2"></td>
+						<td class="serve-44 serve-end-score" rowspan="2"></td>
 					</tr>
 					<tr>
 						<td><input type="number" min="0" max="1000"></td>
@@ -236,10 +236,10 @@
 						<td rowspan="2">5</td>
 						<td><input class="p5 player-in" type="number" min="0" max="1000"</td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-51 serve-end-score" rowspan="2"></td>
+						<td class="serve-52 serve-end-score" rowspan="2"></td>
+						<td class="serve-53 serve-end-score" rowspan="2"></td>
+						<td class="serve-54 serve-end-score" rowspan="2"></td>
 						<td colspan="2" rowspan="2">Time-outs</td>
 					</tr>
 					<tr>
@@ -250,10 +250,10 @@
 						<td rowspan="2">6</td>
 						<td><input class="p6 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-61 serve-end-score" rowspan="2"></td>
+						<td class="serve-62 serve-end-score" rowspan="2"></td>
+						<td class="serve-63 serve-end-score" rowspan="2"></td>
+						<td class="serve-64 serve-end-score" rowspan="2"></td>
 						<td rowspan="2"></td>
 						<td rowspan="2"></td>
 					</tr>
@@ -264,6 +264,12 @@
 					<tr>
 						<td colspan="5">Libero: <input type="number" min="0" max="1000"></td>
 						<td colspan="4">Final Score: </td>
+					</tr>
+					<tr>
+						<td colspan="9" class="set-btns">
+							<button onclick="point(1)">Point</button>
+							<button>Undo</button>
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -281,7 +287,7 @@
 							  <option value=""></option>
 							</select>
 						</td>
-						<td colspan="2" rowspan="10"> <div class="Score">0</div> </td>
+						<td colspan="2" rowspan="10"> <div class="team-score">0</div> </td>
 					</tr>
 					<tr>
 						<td>1</td>
@@ -293,10 +299,10 @@
 						<td rowspan="2">1</td>
 						<td><input class="p1 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-11 serve-end-score" rowspan="2"></td>
+						<td class="serve-12 serve-end-score" rowspan="2"></td>
+						<td class="serve-13 serve-end-score" rowspan="2"></td>
+						<td class="serve-14 serve-end-score" rowspan="2"></td>
 					</tr>
 					<tr>
 						<td><input type="number" min="0" max="1000"></td>
@@ -306,10 +312,10 @@
 						<td rowspan="2">2</td>
 						<td><input class="p2 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-21 serve-end-score" rowspan="2"></td>
+						<td class="serve-22 serve-end-score" rowspan="2"></td>
+						<td class="serve-23 serve-end-score" rowspan="2"></td>
+						<td class="serve-24 serve-end-score" rowspan="2"></td>
 					</tr>
 					<tr>
 						<td><input type="number" min="0" max="1000"></td>
@@ -319,10 +325,10 @@
 						<td rowspan="2">3</td>
 						<td><input class="p3 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-31 serve-end-score" rowspan="2"></td>
+						<td class="serve-32 serve-end-score" rowspan="2"></td>
+						<td class="serve-33 serve-end-score" rowspan="2"></td>
+						<td class="serve-34 serve-end-score" rowspan="2"></td>
 					</tr>
 					<tr>
 						<td><input type="number" min="0" max="1000"></td>
@@ -332,10 +338,10 @@
 						<td rowspan="2">4</td>
 						<td><input class="p4 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-41 serve-end-score" rowspan="2"></td>
+						<td class="serve-42 serve-end-score" rowspan="2"></td>
+						<td class="serve-43 serve-end-score" rowspan="2"></td>
+						<td class="serve-44 serve-end-score" rowspan="2"></td>
 					</tr>
 					<tr>
 						<td><input type="number" min="0" max="1000"></td>
@@ -345,10 +351,10 @@
 						<td rowspan="2">5</td>
 						<td><input class="p5 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-51 serve-end-score" rowspan="2"></td>
+						<td class="serve-52 serve-end-score" rowspan="2"></td>
+						<td class="serve-53 serve-end-score" rowspan="2"></td>
+						<td class="serve-54 serve-end-score" rowspan="2"></td>
 						<td colspan="2" rowspan="2">Time-outs</td>
 					</tr>
 					<tr>
@@ -359,10 +365,10 @@
 						<td rowspan="2">6</td>
 						<td><input class="p6 player-in" type="number" min="0" max="1000"></td>
 						<td></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
-						<td rowspan="2"></td>
+						<td class="serve-61 serve-end-score" rowspan="2"></td>
+						<td class="serve-62 serve-end-score" rowspan="2"></td>
+						<td class="serve-63 serve-end-score" rowspan="2"></td>
+						<td class="serve-64 serve-end-score" rowspan="2"></td>
 						<td rowspan="2"></td>
 						<td rowspan="2"></td>
 					</tr>
@@ -373,6 +379,12 @@
 					<tr>
 						<td colspan="5">Libero: <input type="number" min="0" max="1000"></td>
 						<td colspan="4">Final Score: </td>
+					</tr>
+					<tr>
+						<td colspan="9" class="set-btns">
+							<button onclick="point(2)">Point</button>
+							<button>Undo</button>
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -405,6 +417,7 @@
 	<script src=".\js\getTeamInfo.js"></script> 
 	<script src=".\js\updateDropDowns.js"></script> 
 	<script src=".\js\courtVisual.js"></script> 
+	<script src=".\js\scoring.js"></script> 
 	<script src=".\js\script.js"></script> 
 </body>
 </html>

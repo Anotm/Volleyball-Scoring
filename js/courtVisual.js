@@ -16,21 +16,20 @@ function getRosters(setID) {
 	return rosters;
 }
 
-function setCourtVisual(setID) {
+function setCourtVisual() {
 	for (var i = 0; i < 6; i++) {
 		var j1 = (i + rotaOffset[0]) % 6 + 1;
 		var j2 = (i + rotaOffset[1]) % 6 + 1;
-		console.log(j1,j2, rosters);
-		// $("div.sets div#" + setID + " div.court-visual-left-team td.pos" + j1).empty();
-		// $("div.sets div#" + setID + " div.court-visual-right-team td.pos" + j2).empty();
+		// console.log(j1,j2, rosters);
 
-		$("div.sets div#" + setID + " div.court-visual-left-team td.pos" + j1).text(rosters[0][i]);
-		$("div.sets div#" + setID + " div.court-visual-right-team td.pos" + j2).text(rosters[1][i]);
-		console.log($("div.sets div#" + setID + " div.court-visual-left-team td.pos" + j1));
+		$("div.sets div#set" + setNumber + " div.court-visual-left-team td.pos" + j1).text(rosters[0][i]);
+		$("div.sets div#set" + setNumber + " div.court-visual-right-team td.pos" + j2).text(rosters[1][i]);
+		console.log($("div.sets div#set" + setNumber + " div.court-visual-left-team td.pos" + j1));
+		console.log("div.sets div#set" + setNumber + " div.court-visual-left-team td.pos" + j1);
 	}
 }
 
-function rotate(setID, side) {
+function rotate(side) {
 	rotaOffset[side-1] += 5;
-	setCourtVisual(setID);
+	setCourtVisual();
 }

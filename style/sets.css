@@ -1,16 +1,73 @@
-div.sets table {
+div.sets div.set {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+div.sets div.set div.court-visual-left-team,
+div.sets div.set div.court-visual-right-team {
+  position: relative;
+  width: 20%;
+  background-color: #999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.sets div.set div.court-visual-left-team {
+  justify-content: right;
+}
+
+div.sets div.set div.court-visual-right-team {
+  justify-content: left;
+}
+
+div.sets div.set div.court {
+  position: relative;
+  width: 70%;
+  height: 80%;
+  background-color: #fff;
+}
+
+div.sets div.set div.court table.players {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-collapse: collapse; 
+}
+
+div.sets div.set div.court table.players tbody tr td {
+  text-align: center;
+}
+
+div.sets div.set div.court table.players tr td:first-child {
+  border-right: 2px solid black;
+  width: 50%;
+}
+
+div.sets div.set div.net {
+  width: 10%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.5;
+  background-image: linear-gradient(45deg, #000000 50%, #ffffff 50%);
+  background-size: 9px 9px;
+  border: 2px solid black;
+}
+
+
+div.sets div.set > table {
   border-collapse: collapse;
   table-layout: fixed;
 }
 
-div.sets table td {
+div.sets div.set > table td {
   border: 1px solid black;
-}
-
-div.sets td {
   font-family: Arial, sans-serif;
   overflow: hidden;
-  padding: 10px 5px;
+  padding: 5px 5px;
   word-break: normal;
 }
 
@@ -25,8 +82,15 @@ div.sets td > div.Score {
   font-size: 2rem;
 }
 
-div.sets div.set {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+/* Chrome, Safari, Edge, Opera */
+div.sets table tbody tr td input::-webkit-outer-spin-button,
+div.sets table tbody tr td input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+div.sets table tbody tr td input[type=number] {
+  -moz-appearance: textfield;
+  margin: 0;
 }

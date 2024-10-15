@@ -33,6 +33,7 @@ div.team-info input::-webkit-inner-spin-button {
 /* Firefox */
 div.team-info input[type=number] {
   -moz-appearance: textfield;
+  margin: 0;
 }
 
 div.team-info table td:last-child input {

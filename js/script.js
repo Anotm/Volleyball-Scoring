@@ -26,3 +26,15 @@ $('div.team-two > table > tbody > tr > td > input').on('input', function(){
 $("select.select-team-name").on("change", function(){
 	setOtherTeamName(this);
 });
+
+$('div.sets > div.set table.team-on-left input.player-in').on('input', function(){
+	var setID = $(this).parent().parent().parent().parent().parent().attr('id');
+	rosters = getRosters(setID);
+	setCourtVisual(setID);
+});
+
+$('div.sets > div.set table.team-on-right input.player-in').on('input', function(){
+	var setID = $(this).parent().parent().parent().parent().parent().attr('id');
+	rosters = getRosters(setID);
+	setCourtVisual(setID);
+});

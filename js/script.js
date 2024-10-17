@@ -2,6 +2,60 @@ var teamNames = ["", ""];
 var teamPlayers = [[], []];
 var setNumber = 1;
 
+$('table.team-on-right td.pos-num-and-vis').each(function(index){
+	var num = index % 6 + 1;
+	$(this).append(`
+		<div class="court-visual">
+		${num}
+			<table class="players">
+				<tbody>
+				<tr>
+					<td class="pos2"></td>
+					<td class="pos1"></td>
+				</tr>
+				<tr>
+					<td class="pos3"></td>
+					<td class="pos6"></td>
+				</tr>
+				<tr>
+					<td class="pos4"></td>
+					<td class="pos5"></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	`);
+});
+
+$('table.team-on-left td.pos-num-and-vis').each(function(index){
+	var num = index % 6 + 1;
+	$(this).append(`
+		<div class="court-visual">
+		${num}
+			<table class="players">
+				<tbody>
+				<tr>
+					<td class="pos5"></td>
+					<td class="pos4"></td>
+				</tr>
+				<tr>
+					<td class="pos6"></td>
+					<td class="pos3"></td>
+				</tr>
+				<tr>
+					<td class="pos1"></td>
+					<td class="pos2"></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	`);
+});
+
+for (var i = 1; i <= 6; i++) {
+	$(`div.sets div.set > table td.pos-num-and-vis:contains("${i}") td.pos${i}`).addClass("selected");
+}
+
 $('div.team-one > div.team-name > p > input').on('input', function(){
 	teamNames[0] = getTeamName(1);
 	updateTeamNameDropDown(teamNames);
@@ -24,7 +78,7 @@ $('div.team-two > table > tbody > tr > td > input').on('input', function(){
 	// console.log(teamPlayers);
 });
 
-$("select.select-team-name").on("change", function(){
+$('select.select-team-name').on("change", function(){
 	setOtherTeamName(this);
 });
 

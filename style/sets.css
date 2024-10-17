@@ -6,59 +6,31 @@ div.sets div.set {
   gap: 2rem;
 }
 
-div.sets div.set div.court-visual-left-team,
-div.sets div.set div.court-visual-right-team {
+div.sets div.set div.court-visual {
   position: relative;
-  width: 20%;
-  background-color: #999;
+  width: 48px;
+  height: 54px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 0.2rem;
 }
 
-div.sets div.set div.court-visual-left-team {
-  justify-content: right;
-}
-
-div.sets div.set div.court-visual-right-team {
-  justify-content: left;
-}
-
-div.sets div.set div.court {
-  position: relative;
-  width: 70%;
-  height: 80%;
-  background-color: #fff;
-}
-
-div.sets div.set div.court table.players {
+div.sets div.set div.court-visual table.players {
   position: relative;
   width: 100%;
   height: 100%;
-  border: 2px solid black;
-  border-collapse: collapse; 
+  background-color: #eee;
 }
 
-div.sets div.set div.court table.players tbody tr td {
-  text-align: center;
-  font-size: 2rem;
+div.sets div.set div.court-visual table.players td.selected{
+  background-color: #aaa;
 }
 
-div.sets div.set div.court table.players tr td:first-child {
-  border-right: 2px solid black;
-  width: 50%;
+div.sets div.set div.court-visual table.players td.selected.pos1{
+  background-color: #f66;
 }
-
-div.sets div.set div.net {
-  width: 10%;
-  height: 100%;
-  background-color: #ffffff;
-  opacity: 0.5;
-  background-image: linear-gradient(45deg, #000000 50%, #ffffff 50%);
-  background-size: 9px 9px;
-  border: 2px solid black;
-}
-
 
 div.sets div.set > table {
   border-collapse: collapse;

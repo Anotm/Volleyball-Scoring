@@ -27,6 +27,6 @@ function point(num) {
 
 	var serverNumber = (Math.floor(playerServing) % 6 + 1) * 10 + Math.floor(serveSwitchCounter/12) + 1;
 	$("div.sets div#set" + setNumber + " table." + side + " td.serve-" + serverNumber).text(score[num-1]);
-	console.log($("div.sets div#set" + setNumber + " table." + side + " td.serve-" + serverNumber));
-	console.log("div.sets div#set" + setNumber + " table." + side + " td.serve-" + serverNumber);
+	// console.log($("div.sets div#set" + setNumber + " table." + side + " td.serve-" + serverNumber));
+	// console.log("div.sets div#set" + setNumber + " table." + side + " td.serve-" + serverNumber);
 }

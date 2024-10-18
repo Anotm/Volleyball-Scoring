@@ -87,6 +87,10 @@ for (var i = 0; i < 4; i++) {
   $div.after( $clon );
 }
 
+for (var i = 2; i <= 5; i++) {
+	$("div.sets div#set" + i).append('<div class="overlay_block"></div>');
+}
+
 $('div.team-one > table > tbody > tr > td > input').on('input', function(){
 	teamPlayers[0] = getTeamPlayers(1);
 	// console.log(teamPlayers);

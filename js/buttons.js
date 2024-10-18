@@ -30,3 +30,13 @@ function point(num) {
 	// console.log($("div.sets div#set" + setNumber + " table." + side + " td.serve-" + serverNumber));
 	// console.log("div.sets div#set" + setNumber + " table." + side + " td.serve-" + serverNumber);
 }
+
+function teamTimeOut(el) {
+	var parent = $(el).parent();
+	console.log(el)
+	console.log(parent);
+	$(parent).empty();
+	$(parent).text(score[0] + "/" + score[1]);
+
+	$(parent).next().children().attr('disabled', false);
+}

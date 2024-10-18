@@ -68,6 +68,25 @@ $('div.team-two > div.team-name > p > input').on('input', function(){
 	// console.log(teamNames);
 });
 
+$('input#left-team-fs-input').prop("checked", true);
+
+$('input[type=radio][name=first_serve]').change(function() {
+    if (this.value == 'Left Team') {
+        currentTeamServing = 1;
+    }
+    else if (this.value == 'Right Team') {
+        currentTeamServing = 2;
+    }
+    console.log(currentTeamServing);
+});
+
+for (var i = 0; i < 4; i++) {
+  var $div = $('div[id^="set"]:last');
+  var num = parseInt( $div.prop("id").match(/\d+/g), 10 ) +1;
+  var $clon = $div.clone().prop('id', 'set'+num );
+  $div.after( $clon );
+}
+
 $('div.team-one > table > tbody > tr > td > input').on('input', function(){
 	teamPlayers[0] = getTeamPlayers(1);
 	// console.log(teamPlayers);

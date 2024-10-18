@@ -6,6 +6,7 @@
 </head>
 <body>
 	<div class="team-info">
+
 		<div class="team-one">
 			<div class="team-name">
 				<p>Team: <input type="text"></p>
@@ -133,6 +134,15 @@
 				</tr>
 			</table>
 		</div>
+
+	</div>
+
+	<div class="first-serve-box">
+		<p>First Serve</p>
+		<input id="left-team-fs-input" type="radio" name="first_serve" value="Left Team">
+		<label for="html">Left Team</label> &emsp;
+		<input id="right-team-fs-input" type="radio" name="first_serve" value="Right Team">
+		<label for="css">Right Team</label><br>
 	</div>
 
 	<div class="sets">
@@ -242,10 +252,7 @@
 					</tr>
 					<tr>
 						<td colspan="5">Libero: <input type="number" min="0" max="1000"></td>
-						<td colspan="4">Final Score: </td>
-					</tr>
-					<tr>
-						<td colspan="9" class="set-btns">
+						<td colspan="4" class="set-btns">
 							<button onclick="point(1)">Point</button>
 							<button>Undo</button>
 						</td>
@@ -357,10 +364,7 @@
 					</tr>
 					<tr>
 						<td colspan="5">Libero: <input type="number" min="0" max="1000"></td>
-						<td colspan="4">Final Score: </td>
-					</tr>
-					<tr>
-						<td colspan="9" class="set-btns">
+						<td colspan="4" class="set-btns">
 							<button onclick="point(2)">Point</button>
 							<button>Undo</button>
 						</td>

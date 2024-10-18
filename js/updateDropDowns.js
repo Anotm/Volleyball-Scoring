@@ -11,14 +11,14 @@ function updateTeamNameDropDown(teamNameList) {
 function setOtherTeamName(el) {
 	const parentTable = $(el).parent().parent().parent().parent();
 	const parentTableClass = $(parentTable).attr("class");
-	const parentSet = $(parentTable).parent();
+	
 	var otherTableClass = "";
 	if (parentTableClass == "team-on-left") {
 		otherTableClass = "team-on-right";
 	} else if (parentTableClass == "team-on-right") {
 		otherTableClass = "team-on-left";
 	}
-	const otherSelectString = ".sets .set table." + otherTableClass + " tbody tr td select.select-team-name";
+	const otherSelectString = ".sets #set" + setNumber + " table." + otherTableClass + " tbody tr td select.select-team-name";
 	const otherSelect = $(otherSelectString);
 
 	const nonSelectedOption = $(el).children('option:not(:selected)')[1];

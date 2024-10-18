@@ -4,6 +4,7 @@ div.sets div.set {
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 div.sets div.set div.court-visual {

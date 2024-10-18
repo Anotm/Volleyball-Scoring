@@ -3,11 +3,11 @@ div.team-info {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 1rem;
 }
 
 div.team-info > div {
   border: 2px solid black;
-  margin: 1rem;
   padding: 0.5rem;
 }
 
@@ -42,4 +42,14 @@ div.team-info table td:last-child input {
   margin: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+div.first-serve-box {
+  text-align: center;
+  margin: 2rem;
+}
+
+div.first-serve-box p{
+  margin: 0;
+  font-size: 1.6rem;
 }
